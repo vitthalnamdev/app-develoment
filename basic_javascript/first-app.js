@@ -11,3 +11,9 @@ console.log(add(5,3));
 // lets say let a;
 // const data type value cannot be changed.
 let a=5;let b="a";let c="c";
+// another way to write functions
+const mul = (a, b) => {
+  return a*b;
+}
+console.log(mul(4,3));
+// there are also other ways too.
