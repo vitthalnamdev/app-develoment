@@ -21,3 +21,8 @@ const brr=[arr];// it made the array of an array or 2-d array
 const crr=[...arr];// it copies the array into the given array.
 console.log(brr);
 console.log(crr);
+// a cool function to return the array by spread operator .
+const toarray = (...arg) => {
+    return arg;
+}
+console.log(1,2,3,4,5,5);
