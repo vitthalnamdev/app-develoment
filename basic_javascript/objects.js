@@ -25,4 +25,5 @@ console.log(crr);
 const toarray = (...arg) => {
     return arg;
 }
-console.log(1,2,3,4,5,5);
+const a=toarray(1,2,3,4,5,5);
+console.log(a);
