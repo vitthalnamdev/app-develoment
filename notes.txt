@@ -1,0 +1,7 @@
+there is a certain part of a code in js that executes asynchronously and read 
+about it from internet.example-> req.on() function will register first 
+i.e. read about registry of a function and when and how node js do it.
+
+
+
+
