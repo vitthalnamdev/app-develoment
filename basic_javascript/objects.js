@@ -1,7 +1,7 @@
 const student = {
    name: 'vitthal',
    marks: 99,
-   greet(){
+   greet(){       
      console.log("hi, i am " + this.name);
    }
 };
