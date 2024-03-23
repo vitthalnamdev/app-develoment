@@ -26,12 +26,13 @@ const server = http.createServer((req,res) => {
     req.on('end',()=>{
       const parsedBody= Buffer.concat(body).toString();
       // .split function is of string and can split a string into many parts from the given sign.
-       const message= parsedBody.split('=')[1];
-       fs.writeFileSync('message.txt',message);
-       res.statusCode=302;
-    })       
-    res.setHeader('Location','/');
-    return res.end(); 
+       const message=parsedBody.split('=')[1];
+       fs.writeFile('message.txt',message,err => {
+        res.statusCode=302;
+        res.setHeader('Location','/');
+        return res.end(); 
+       });
+    })   
   }
   // manipulating res or response.
   res.setHeader('Content-Type','text/html')
