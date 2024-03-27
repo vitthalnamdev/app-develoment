@@ -6,10 +6,10 @@ const student = {
    }
 };
 const arr=["hi",1,2,0,'a'];
-// console.log(student);
+console.log(student);
 // student.greet();
 // for(let i of arr){  
-//     console.log(i);
+//    console.log(i);
 // }
 // // operations with array.
 // console.log(arr.map(i => {

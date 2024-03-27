@@ -4,7 +4,6 @@ const fetchdata = (name) => {
    },1500)
 }
 
-
 setTimeout(() => {
     console.log('timer is done')
     fetchdata((txt)=> {
