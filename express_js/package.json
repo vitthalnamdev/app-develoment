@@ -5,7 +5,7 @@
   "main": "routes.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
+    "start": "nodemon parsing_request.js",
     "start-server": "node server.js"
   },
   "author": "",
@@ -18,5 +18,6 @@
     "body-parser": "^1.20.2",
     "path": "^0.12.7",
     "Router": "^2.1.0"
-  }
+  },
+  "keywords": []
 }
