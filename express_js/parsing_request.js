@@ -10,8 +10,14 @@ app.use(bodyParser.urlencoded({extended: false}));
 // actually this admin filter just check the starting of the dir and go further deeper
 // into the files code if this matches, in there it will not check the /admin keyword.
 // and check afterwards.
- app.use('/admin',shoproutes);
+
+
+  // if you want to serve file statistically i.e. look for a css code from the sended html file, 
+    // then you have to define a middleware like below..
+app.use(express.static(path.join(__dirname,'routes')));
  app.use('/admin',adminroutes);
+ app.use(shoproutes);
+ 
 app.use((req,res,next)=> {
   res.sendFile('./routes/view/404.html' , { root : __dirname});
 }) 
