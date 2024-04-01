@@ -1,6 +1,7 @@
 const express= require('express')
+const path = require('path');
 const router = express.Router();
-
+router.use(express.static(path.join(__dirname,'view')));
 router.get('/add-product',(req,res,next)=>{
     console.log("ok")
     res.sendFile('./view/admin.html' , { root : __dirname});
